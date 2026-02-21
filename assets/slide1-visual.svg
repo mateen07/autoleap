@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#79a6ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#64f2c4" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#79a6ff"/>
+      <stop offset="1" stop-color="#64f2c4"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="520" rx="22" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="60" y="80" width="520" height="340" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="620" y="80" width="520" height="340" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.10)"/>
+  <text x="90" y="125" fill="rgba(232,238,252,0.92)" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="700">Today</text>
+  <text x="650" y="125" fill="rgba(232,238,252,0.92)" font-family="ui-sans-serif,system-ui" font-size="22" font-weight="700">Tomorrow</text>
+  <rect x="95" y="160" width="445" height="120" rx="14" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+  <text x="115" y="200" fill="rgba(232,238,252,0.86)" font-family="ui-monospace,Menlo" font-size="14">Manual, inconsistent follow-up</text>
+  <rect x="655" y="160" width="485" height="120" rx="14" fill="url(#g1)" stroke="rgba(121,166,255,0.35)"/>
+  <text x="680" y="200" fill="rgba(232,238,252,0.92)" font-family="ui-sans-serif,system-ui" font-size="16" font-weight="800">AI-guided follow-up</text>
+  <path d="M580 220 C600 220, 600 220, 620 220" stroke="url(#g2)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M618 206 L650 220 L618 234" fill="url(#g2)"/>
+  <text x="90" y="450" fill="rgba(232,238,252,0.75)" font-family="ui-monospace,Menlo" font-size="12">Guardrails: approval • caps • quiet hours • consent logs • kill switch</text>
+</svg>
