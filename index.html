@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AutoLeap AI CRM Case Study</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Slide deck web app for AutoLeap AI-powered CRM/Marketing module vision." />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar" role="banner">
+      <div class="brand">
+        <span class="dot"></span>
+        <span class="title">AutoLeap — AI CRM / Marketing Module</span>
+      </div>
+      <div class="controls" aria-label="Presentation controls">
+        <button id="btnPrev" class="btn" title="Previous (←)" aria-label="Previous slide">←</button>
+        <button id="btnNext" class="btn" title="Next (→)" aria-label="Next slide">→</button>
+        <button id="btnOverview" class="btn" title="Overview (O)" aria-label="Toggle overview">Overview</button>
+        <button id="btnFullscreen" class="btn" title="Fullscreen (F)" aria-label="Fullscreen">Fullscreen</button>
+      </div>
+    </header>
+
+    <main class="deck" role="main">
+      <nav class="sidebar" aria-label="Slides">
+        <ol id="toc" class="toc"></ol>
+      </nav>
+
+      <section id="stage" class="stage" aria-live="polite"></section>
+
+      <section id="overview" class="overview" aria-label="Slide overview" hidden></section>
+    </main>
+
+    <footer class="bottombar" role="contentinfo">
+      <div class="hint">
+        <span>Keys:</span>
+        <kbd>←</kbd><kbd>→</kbd> <span>navigate</span>
+        <kbd>O</kbd> <span>overview</span>
+        <kbd>F</kbd> <span>fullscreen</span>
+        <kbd>?</kbd> <span>help</span>
+      </div>
+      <div class="progress" aria-label="Slide progress">
+        <span id="counter" class="counter">1/9</span>
+        <div class="bar"><div id="barFill" class="barFill"></div></div>
+      </div>
+    </footer>
+  </div>
+
+  <dialog id="help" class="help" aria-label="Help">
+    <h2>Controls</h2>
+    <ul>
+      <li><strong>← / →</strong> Previous / Next slide</li>
+      <li><strong>O</strong> Toggle overview grid</li>
+      <li><strong>F</strong> Fullscreen</li>
+      <li><strong>Home / End</strong> First / Last slide</li>
+      <li><strong>Esc</strong> Close help / exit overview</li>
+    </ul>
+    <form method="dialog"><button class="btn">Close</button></form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
