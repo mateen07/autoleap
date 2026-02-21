@@ -114,36 +114,36 @@ const slides = [
   },
   {
     "title": "What We’re Building (Product Pillars)",
-    "subtitle": "Capabilities that create compounding advantage",
+    "subtitle": "The capabilities that make capacity-aware orchestration real.",
     "tag": "Product",
-    "kicker": "We build four pillars: data foundation, recommendation engine, guardrails, and measurement.",
+    "kicker": "These pillars let AutoLeap fill open bays intelligently: detect available capacity, pick the right customers/services, communicate safely, and prove what worked.",
     "sections": [
       {
         "type": "card",
-        "h3": "Pillar 1: Data foundation & taxonomy",
-        "p": "Normalize invoice/estimate line items into a service taxonomy. Capture deferred work consistently."
+        "h3": "Pillar 1: Shop + Customer Data Foundation",
+        "p": "1) Unify customer, vehicle, RO/invoice, estimate, and appointment data\n2) Standardize services into a simple taxonomy (oil, brakes, tires, etc.)\n3) Capture “declined/deferred” work reliably"
       },
       {
         "type": "card",
-        "h3": "Pillar 2: Next Best Action engine",
-        "p": "Rules-first for speed, ML later for accuracy. Output: customer + recommended service + reason + timing."
+        "h3": "Pillar 2: Capacity + Recommendation Engine",
+        "p": "1) Detect schedule gaps (open bays, slow days, cancellations)\n2) Rank customers by likelihood + relevance + value\n3) Recommend the “right work mix” based on capacity and service context"
       },
       {
         "type": "card",
-        "h3": "Pillar 3: Messaging + compliance + control",
-        "p": "Consent, opt-out, logging, quiet hours, frequency caps. Approval modes (draft-only → auto-send with limits)."
+        "h3": "Pillar 3: Orchestration + Guardrails",
+        "p": "1) Trigger outreach when it helps the schedule\n2) Follow up on the schedule\n3) Tone/brand settings so messages still feel like the shop"
       },
       {
         "type": "card",
-        "h3": "Pillar 4: Measurement & experimentation",
-        "p": "Track send → reply/click → booking → revenue. Holdout tests to measure incremental lift."
+        "h3": "Pillar 4: Measurement + Learning Loop",
+        "p": "1) Track: outreach → replies/clicks → bookings → revenue\n2) Use results to tune timing, targeting, and recommended offers\n 3) Learn and improve the system"
       }
     ],
     "bullets": [],
     "chips": [
-      "Rules-first",
+      "Capacity signals",
       "Guardrails",
-      "Experimentation"
+      "Measurement"
     ]
   },
   {
