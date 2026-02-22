@@ -181,24 +181,24 @@ const slides = [
   },
   {
     "title": "Incremental Delivery Plan",
-    "subtitle": "Copilot → Autopilot → Autonomy (tied to trust & data maturity)",
+    "subtitle": "From Human‑In‑The‑Loop to Autonomy",
     "tag": "Roadmap",
-    "kicker": "We ship value in weeks, prove ROI, then earn automation safely.",
+    "kicker": "We sequence delivery to build toward capacity‑aware orchestration by de‑risking trust → proof → autonomy.",
     "sections": [
       {
         "type": "card",
-        "h3": "Phase 1 (MVP): AI Copilot + instrumentation",
-        "p": "Goal: save time + establish voice + baseline metrics.\nDelivers: one-click draft/rewrite, tone presets, compliant templates, basic segmentation, tracking."
+        "h3": "Phase 1 (MVP): Guided Messaging (4–6 weeks)",
+        "p": "Goal: save time + establish trust + measurement baseline\n• AI drafting + rewrite with tone presets (owner in control)\n• Basic targeting (lapsed, recent, high-value)\n• Tracking foundation (message → click/reply → booking tag)"
       },
       {
         "type": "card",
-        "h3": "Phase 2 (Major Launch): Autopilot triggers + deferred work recovery",
-        "p": "Goal: measurable revenue engine.\nDelivers: trigger engine (declined estimates, lapsed customers, seasonal), recommendations (rules-first), attribution + holdouts."
+        "h3": "Phase 2 (Major Launch): Capacity‑Aware Orchestration (6–10 weeks)",
+        "p": "Goal: fill open bays intelligently (the game-changer)\n• Capacity-aware pull-forward: “Top customers to fill Tuesday”\n• High-signal triggers (declined work, reactivation)\n• Proof: incremental bookings measurement"
       },
       {
         "type": "card",
-        "h3": "Phase 3 (Future): Conversational booking + capacity-aware scheduling",
-        "p": "Goal: reduce friction from interest to scheduled.\nDelivers: 2-way SMS scheduling, calendar-aware booking, escalation to staff, learning from outcomes."
+        "h3": "Phase 3 (Future): Autonomous Scheduling",
+        "p": "Goal: reduce friction from interest → scheduled\n• Two-way conversation (questions, reschedules, confirmations)\n• Capacity-aware booking + escalation rules\n• Full visibility into AI actions"
       }
     ],
     "bullets": [],
