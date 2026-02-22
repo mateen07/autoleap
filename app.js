@@ -232,25 +232,25 @@ const slides = [
     ]
   },
   {
-    "title": "Risks, Mitigations & Rollout",
-    "subtitle": "How we avoid ‘automated spam’ and build trust at scale",
+    "title": "Risks, Guardrails  & Rollout",
+    "subtitle": "Scale automation with guardrails",
     "tag": "Delivery",
     "kicker": "We protect customer experience, deliverability, and compliance as first-class product requirements.",
     "sections": [
       {
         "type": "card",
         "h3": "Key risks",
-        "p": "Incorrect recommendations reduce trust.\nOver-messaging increases opt-outs and harms deliverability.\nCompliance exposure.\nUnsafe phrasing without evidence."
+        "p": "Wrong timing /Over-messaging /irrelevant outreach → opt‑outs + trust loss\nAutomation mistakes → wrong booking, operational disruption"
       },
       {
         "type": "card",
-        "h3": "Mitigations",
-        "p": "Default approval mode; earn autopilot with thresholds.\nFrequency caps + quiet hours + suppression lists.\nExplainability: “why we’re reaching out”.\nKill switch + anomaly detection.\nContent safety rules."
+        "h3": "Guardrails",
+        "p": "Consent + opt‑out logging\nFrequency caps + quiet hours + suppression lists\nHuman-guided approval modes\nKill switch + anomaly detection\nContent safety rules"
       },
       {
         "type": "card",
         "h3": "Rollout plan",
-        "p": "Beta: 20 shops → validate lift & guardrails.\nExpand: 100 shops → refine triggers and controls.\nGA: tiered autonomy settings by shop maturity."
+        "p": "Beta (20 shops): validate value & guardrails stability\nExpand (100 shops): refine orchestration rules\nScale: broader release with autonomy levels by shop maturity"
       }
     ],
     "bullets": [
