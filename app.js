@@ -209,30 +209,20 @@ const slides = [
     ]
   },
   {
-    "title": "Why This Sequence",
-    "subtitle": "We de-risk in the order that kills AI products: trust → compliance → data → autonomy",
+    "title": "Rationale of Delivery Plan",
+    "subtitle": "De-risking the fastest path to impact.",
     "tag": "Plan",
-    "kicker": "Phase 1 earns trust and lays measurement foundations; Phase 2 is the game-changing revenue engine; Phase 3 adds operational autonomy.",
+    "kicker": "We ship in this order so we don’t bet the roadmap on perfect data or blind automation.",
     "sections": [
       {
         "type": "card",
-        "h3": "Why Phase 1 first",
-        "p": "Fast value with minimal data dependency. Builds trust in AI voice & controls. Establishes baseline + instrumentation."
+        "h3": "Why this order",
+        "p": "• Phase 1 builds trust and a baseline\n• Phase 2 proves ROI by filling open bays\n• Phase 3 focuses to scale autonomy for maximum value"
       },
       {
         "type": "card",
-        "h3": "Why Phase 2 is the game-changer",
-        "p": "Shifts from content generation to outcome optimization. Triggers + targeting + attribution create measurable ROI."
-      },
-      {
-        "type": "card",
-        "h3": "Resourcing (3 devs + 1 designer)",
-        "p": "Designer: Copilot UX + controls.\nDev A: messaging + consent + logging.\nDev B: taxonomy + triggers + segmentation.\nDev C: AI integration + analytics/experiments."
-      },
-      {
-        "type": "card",
-        "h3": "Moat",
-        "p": "Not the LLM. The moat is repair-context data + conversion feedback loop + tuning based on outcomes."
+        "h3": "How we ship fast with a small team and AI ",
+        "p": "• Designer: guided workflows + trust controls (approvals, previews, limits) + reusable templates\n• Dev (Messaging & guardrails): send pipeline, consent/opt-out, quiet hours, frequency limits\n• Dev (Signals & taxonomy): normalize service line items, capture declined/deferred work, detect open bays\n• Dev (Orchestration & proof): “Top 25 to fill Tuesday” logic, attribution, dashboard\n\nHow AI accelerates delivery:\n• LLM for drafting\n• LLM/embeddings for repair context (line items → taxonomy; deferred signals)\n• Intent AI for replies (Phase 3) + safe handoff rules\n• LLMOps for safety (prompt versioning, eval tests, monitoring + rollback)\n• AI-assisted dev (code/tests/SQL + instrumentation)"
       }
     ],
     "bullets": [],
