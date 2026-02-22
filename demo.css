@@ -86,3 +86,12 @@ body{margin:0;font-family:var(--font);background:var(--bg);color:var(--text)}
   .layout{grid-template-columns:1fr}
   .grid2{grid-template-columns:1fr}
 }
+.step { cursor: pointer; }
+.step:hover {
+  border-color: rgba(79,140,255,.28);
+  background: rgba(79,140,255,.06);
+}
+.step:focus {
+  outline: 3px solid rgba(79,140,255,.25);
+  outline-offset: 2px;
+}
