@@ -230,7 +230,20 @@ const slides = [
     ],
     "chips": [
     ]
+  },
+  {
+  title: "Autonomous Agent Demo",
+  subtitle: "From open bays to a booked job — without extra phone calls.",
+  tag: "Demo",
+  kicker: "This is a mock of how AutoLeap identifies open capacity and books a customer with guardrails.",
+  sections: [],
+  bullets: [],
+  media: {
+    type: "iframe",
+    src: "demo.html",
+    alt: "AutoLeap autonomous agent demo UI"
   }
+}
 ]
 
 const $ = (sel) => document.querySelector(sel);
@@ -295,6 +308,16 @@ function renderMedia(s) {
   if (m.type === 'svg') {
     return `<div class="media"><object type="image/svg+xml" data="${m.src}" aria-label="${m.alt || ''}"></object></div>`;
   }
+  if (m.type === 'iframe') {
+  return `<div class="media">
+    <iframe
+      src="${m.src}"
+      title="${m.alt || 'Demo'}"
+      style="width:100%; height:560px; border:0; border-radius:12px;"
+      loading="lazy"
+    ></iframe>
+  </div>`;
+}
   return '';
 }
 
