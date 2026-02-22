@@ -235,7 +235,7 @@ const slides = [
   title: "Autonomous Agent Demo",
   subtitle: "From open bays to a booked job — without extra phone calls.",
   tag: "Demo",
-  kicker: "This is a mock of how AutoLeap identifies open capacity and books a customer with guardrails.",
+  kicker: "Click on the Play Demo button to mock run an agent to identify open capacity and book a customer.",
   sections: [],
   bullets: [],
   media: {
