@@ -222,7 +222,7 @@ const slides = [
       {
         "type": "card",
         "h3": "How we ship fast with a small team and AI ",
-        "p": "• Designer: guided workflows + trust controls (approvals, previews, limits) + reusable templates\n• Dev (Messaging & guardrails): send pipeline, consent/opt-out, quiet hours, frequency limits\n• Dev (Signals & taxonomy): normalize service line items, capture declined/deferred work, detect open bays\n• Dev (Orchestration & proof): “Top 25 to fill Tuesday” logic, attribution, dashboard\n\nHow AI accelerates delivery:\n• LLM for drafting\n• LLM/embeddings for repair context (line items → taxonomy; deferred signals)\n• Intent AI for replies (Phase 3) + safe handoff rules\n• LLMOps for safety (prompt versioning, eval tests, monitoring + rollback)\n• AI-assisted dev (code/tests/SQL + instrumentation)"
+        "p": "• Designer: guided workflows + trust controls (approvals, previews, limits) + reusable templates\n• Dev (Messaging & guardrails): send pipeline, consent/opt-out, quiet hours, frequency limits\n• Dev (Signals & taxonomy): normalize service line items, capture declined/deferred work, detect open bays\n• Dev (Orchestration & proof): “Top 25 to fill Tuesday” logic, attribution, dashboard\n\nHow AI accelerates delivery:\n• LLM for drafting\n• LLM for repair context + smart scheduling \n• Intent AI for replies\n• AI-assisted dev (code/tests/SQL + instrumentation)"
       }
     ],
     "bullets": [],
