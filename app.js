@@ -28,9 +28,6 @@ const slides = [
       "**Trust-first autonomy** with clear controls and safety rails"
     ],
     "chips": [
-      "Revenue partner",
-      "More booked jobs",
-      "Vision"
     ]
   },
   {
@@ -52,10 +49,6 @@ const slides = [
     ],
     "bullets": [],
     "chips": [
-      "Deferred work",
-      "Lapsed customers",
-      "Time-poor owners",
-      "No learning loop"
     ]
   },
   {
@@ -82,10 +75,6 @@ const slides = [
     ],
     "bullets": [],
     "chips": [
-      "Audit",
-      "Coverage score",
-      "Fallbacks",
-      "De-risking"
     ]
   },
   {
@@ -107,9 +96,6 @@ const slides = [
     ],
     "bullets": ["Inputs: open bays + overdue/deferred services + past visit patterns → Output: Top 25 customers to fill Tuesday’s open slots."],
     "chips": [
-      "Next Best Action",
-      "Attribution",
-      "Learning loop"
     ]
   },
   {
@@ -141,9 +127,6 @@ const slides = [
     ],
     "bullets": [],
     "chips": [
-      "Capacity signals",
-      "Guardrails",
-      "Measurement"
     ]
   },
   {
@@ -175,8 +158,6 @@ const slides = [
     ],
     "bullets": [],
     "chips": [
-      "North Star",
-      "Guardrails"
     ]
   },
   {
@@ -203,9 +184,6 @@ const slides = [
     ],
     "bullets": [],
     "chips": [
-      "MVP",
-      "Major launch",
-      "Future"
     ]
   },
   {
@@ -227,8 +205,6 @@ const slides = [
     ],
     "bullets": [],
     "chips": [
-      "De-risking",
-      "Moat"
     ]
   },
   {
@@ -257,8 +233,6 @@ const slides = [
       "Ship value in weeks, prove ROI with attribution, and earn autonomy responsibly."
     ],
     "chips": [
-      "Beta→GA",
-      "Safety"
     ]
   }
 ]
