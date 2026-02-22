@@ -27,7 +27,7 @@ const slides = [
     ]
   },
   {
-    "title": "Problem & Jobs-to-be-Done (JTBD)",
+    "title": "Problem & Jobs-to-be-Done",
     "subtitle": "Sending messages isn’t the hard part. Following up at the right time is.",
     "tag": "Customer",
     "kicker": "Busy shops lose revenue when follow-up doesn’t happen at the right time, or doesn’t happen at all.",
@@ -48,7 +48,7 @@ const slides = [
     ]
   },
   {
-    "title": "What Autopilot Needs and how we de-risk it",
+    "title": "What Automation Needs and How We De-risk It",
     "subtitle": "What we’re counting on, what we’ll validate fast, and how we’ll ship with imperfect data.",
     "tag": "Data",
     "kicker": "We start with clear data hypotheses, validate gaps in two weeks, and ship with fallbacks so we’re never blocked.",
@@ -95,7 +95,7 @@ const slides = [
     ]
   },
   {
-    "title": "What We’re Building (Product Pillars)",
+    "title": "What We’re Building",
     "subtitle": "The capabilities that make capacity-aware orchestration real.",
     "tag": "Product",
     "kicker": "These pillars let AutoLeap fill open bays intelligently: detect available capacity, pick the right customers/services, communicate safely, and prove what worked.",
