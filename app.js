@@ -16,7 +16,7 @@ const slides = [
           },
           {
             "h3": "Tomorrow",
-            "p": "• AI-guided follow-up will lead to higher reactivation and more booked jobs\n• Less owner effort with AI-assisted workflows"
+            "p": "• AI-guided follow-up will lead to higher reactivation and more booked jobs\n• Less owner effort with AI-assisted workflows\n• Higher revenue"
           }
         ]
       }
