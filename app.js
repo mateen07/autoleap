@@ -226,7 +226,6 @@ const slides = [
       }
     ],
     "bullets": [
-      "Ship value in weeks, prove ROI with attribution, and earn autonomy responsibly."
     ],
     "chips": [
     ]
