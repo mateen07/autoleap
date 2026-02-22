@@ -1,6 +1,6 @@
 # AutoLeap AI CRM Case Study — Slide Web App
 
-A lightweight, static web app that presents a 9-slide deck with keyboard navigation, overview grid, and fullscreen mode.
+A lightweight, static web app that presents a 10-slide deck with keyboard navigation, overview grid, and fullscreen mode.
 
 ## Run locally
 ```bash
