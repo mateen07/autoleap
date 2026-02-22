@@ -198,7 +198,7 @@ const slides = [
       {
         "type": "card",
         "h3": "Phase 3 (Future): Autonomous Scheduling",
-        "p": "Goal: reduce friction from interest → scheduled\n• Two-way conversation (questions, reschedules, confirmations)\n• Capacity-aware booking + escalation rules\n• Full visibility into AI actions"
+        "p": "Goal: reduce friction from interest → scheduled\n• Two-way AI-led conversation (questions, reschedules, confirmations)\n• Capacity-aware booking + escalation rules\n• Full visibility into AI actions"
       }
     ],
     "bullets": [],
