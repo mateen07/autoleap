@@ -148,9 +148,9 @@ const slides = [
   },
   {
     "title": "Success Metrics",
-    "subtitle": "Win = incremental booked appointments without burning trust",
+    "subtitle": "More booked jobs completed successfully",
     "tag": "Metrics",
-    "kicker": "We measure true incremental impact and protect deliverability and customer trust.",
+    "kicker": "We optimize for incremental booked appointments while keeping opt-outs and complaints low.",
     "sections": [
       {
         "type": "card",
@@ -160,17 +160,17 @@ const slides = [
       {
         "type": "card",
         "h3": "Leading indicators",
-        "p": "Reactivation rate • Deferred-work recovery • Booking conversion • Time-to-book"
+        "p": "Booking conversion rate • Deferred-work recovery • Engagement with outreach"
       },
       {
         "type": "card",
         "h3": "Business outcomes",
-        "p": "Bay utilization • AOV uplift • Owner hours saved"
+        "p": "Filled capacity • Order value uplift • Owner hours saved"
       },
       {
         "type": "card",
-        "h3": "Guardrails (non-negotiable)",
-        "p": "Opt-out rate • Complaint/spam flags • Deliverability health • Negative review mentions"
+        "h3": "Guardrails",
+        "p": "Less Opt-out rate • Fewer complaints"
       }
     ],
     "bullets": [],
