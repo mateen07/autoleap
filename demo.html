@@ -3,121 +3,185 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AutoLeap Demo Mock</title>
+  <title>AutoLeap Agent Demo</title>
   <link rel="stylesheet" href="demo.css" />
 </head>
 <body>
-  <main class="canvas">
-    <section class="frame">
+  <main class="wrap">
+    <section class="app">
       <header class="topbar">
         <div class="brand">
-          <span class="brandIcon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-              <path d="M6.5 16.5h11l1.2-4.2a3 3 0 0 0-2.9-3.8H8.2a3 3 0 0 0-2.9 3.8l1.2 4.2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M7.2 16.5v2.2M16.8 16.5v2.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M8 8.7 9.2 6h5.6L16 8.7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M7.2 13.2h1.8M15 13.2h1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <span class="brandName">AutoLeap</span>
+          <span class="logo" aria-hidden="true">🚗</span>
+          <span class="name">AutoLeap</span>
+          <span class="tag">Autonomous Agent Demo</span>
         </div>
-        <div class="topbarRight">
-          <div class="pill">Demo</div>
+        <div class="actions">
+          <button id="btnAuto" class="btn btnGhost" type="button">Auto‑play</button>
+          <button id="btnReset" class="btn btnGhost" type="button">Reset</button>
         </div>
       </header>
 
-      <div class="grid">
-        <!-- Left: Capacity Signal -->
-        <article class="card">
-          <h2 class="cardTitle">Capacity Signal</h2>
+      <div class="layout">
+        <!-- LEFT: stepper -->
+        <aside class="panel">
+          <h2 class="panelTitle">Agent run</h2>
+          <ol class="steps" id="steps">
+            <li class="step active" data-step="0">
+              <div class="stepDot">1</div>
+              <div class="stepText">
+                <div class="stepTitle">Detect capacity</div>
+                <div class="stepSub">Open bays on Tuesday</div>
+              </div>
+            </li>
+            <li class="step" data-step="1">
+              <div class="stepDot">2</div>
+              <div class="stepText">
+                <div class="stepTitle">Select customers</div>
+                <div class="stepSub">Top 25 pull‑forward list</div>
+              </div>
+            </li>
+            <li class="step" data-step="2">
+              <div class="stepDot">3</div>
+              <div class="stepText">
+                <div class="stepTitle">Message & handle reply</div>
+                <div class="stepSub">Schedule negotiation</div>
+              </div>
+            </li>
+            <li class="step" data-step="3">
+              <div class="stepDot">4</div>
+              <div class="stepText">
+                <div class="stepTitle">Book + log safely</div>
+                <div class="stepSub">Confirmation + guardrails</div>
+              </div>
+            </li>
+          </ol>
 
-          <div class="signalBox">
-            <div class="signalIcon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                <path d="M5 13.5c0-4 3.2-7.2 7.2-7.2h.6c4 0 7.2 3.2 7.2 7.2v4.2H5v-4.2Z"
-                      stroke="currentColor" stroke-width="1.6" />
-                <path d="M8 18.2v1.8M16 18.2v1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M9.3 10.4h5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
-
-            <div class="signalText">
-              <div class="signalHeadline" id="signalHeadline">2 open bays next Tuesday</div>
-              <div class="signalSub" id="signalSub">10:30 AM, 2:00 PM</div>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <h3 class="sectionLabel">Signal</h3>
-          <p class="muted" id="signalReason">
-            Target Tuesday open slots to pull work forward.
-          </p>
-
-          <h3 class="sectionLabel">Action</h3>
-          <p class="muted" id="signalAction">
-            Generate a small, targeted list to fill open bays (within caps).
-          </p>
-
-          <div class="mini">
+          <div class="miniBox">
             <div class="miniLabel">Inputs → Output</div>
-            <div class="miniText" id="ioLine">
-              Open bays + overdue/deferred services + visit patterns → “Top 25 customers to fill Tuesday”
+            <div class="miniText">
+              Open bays + overdue/deferred services + visit patterns → <strong>“Top 25 to fill Tuesday”</strong>
             </div>
           </div>
 
-          <div class="mini">
-            <div class="miniLabel">Guardrails</div>
-            <ul class="checkList">
-              <li>Opt-in verified</li>
-              <li>Quiet hours respected</li>
-              <li>Frequency limits applied</li>
-            </ul>
+          <div class="nav">
+            <button id="btnBack" class="btn btnGhost" type="button">Back</button>
+            <button id="btnNext" class="btn btnPrimary" type="button">Next</button>
           </div>
-        </article>
+        </aside>
 
-        <!-- Right: stacked cards -->
-        <div class="stack">
-          <article class="card cardCentered">
-            <div class="bigIcon" aria-hidden="true">
-              <svg viewBox="0 0 56 56" width="56" height="56" fill="none">
-                <circle cx="28" cy="28" r="22" fill="rgba(79, 140, 255, 0.18)" />
-                <path d="M18 28.5l6.4 6.6L38 21.6" stroke="rgb(79, 140, 255)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+        <!-- RIGHT: stage -->
+        <section class="stage">
+          <!-- Step 1 -->
+          <article class="card view active" data-view="0">
+            <h2 class="cardTitle">Capacity detected</h2>
+            <div class="hero">
+              <div class="pillInfo">Tuesday</div>
+              <div class="heroTitle">2 open bays</div>
+              <div class="heroSub">10:30 AM • 2:00 PM</div>
             </div>
-            <h2 class="cardTitle">Booking confirmed</h2>
-            <p class="bigText" id="bookingTime">Tuesday, 2:00 PM</p>
-            <p class="muted small" id="bookingNote">Confirmation sent to customer via SMS.</p>
+            <div class="grid2">
+              <div class="info">
+                <div class="infoTitle">Why it matters</div>
+                <div class="infoText">The agent pulls forward the right work to fill specific open slots—no generic blasts.</div>
+              </div>
+              <div class="info">
+                <div class="infoTitle">Guardrails</div>
+                <ul class="checks">
+                  <li>Quiet hours respected</li>
+                  <li>Weekly message limits applied</li>
+                  <li>Opt‑in required</li>
+                </ul>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
-            <div class="row">
-              <h2 class="cardTitle">Safety</h2>
-              <button class="ghostBtn" type="button" aria-label="Kill switch">
-                <span class="dot"></span> Kill switch
-              </button>
+          <!-- Step 2 -->
+          <article class="card view" data-view="1">
+            <h2 class="cardTitle">Top customers to fill Tuesday</h2>
+            <div class="subtle">Ranked by likelihood × relevance × value, filtered by consent and fatigue caps.</div>
+            <div class="table">
+              <div class="tr th">
+                <div>Customer</div><div>Service due</div><div>Reason</div>
+              </div>
+              <div class="tr">
+                <div>Sam R.</div><div>Oil change</div><div>6 months since last visit</div>
+              </div>
+              <div class="tr">
+                <div>Laura F.</div><div>Brake inspection</div><div>Previously deferred</div>
+              </div>
+              <div class="tr">
+                <div>Jeff C.</div><div>A/C check</div><div>Seasonal + lapsed</div>
+              </div>
+              <div class="tr more">
+                <div>+ 22 more</div><div></div><div></div>
+              </div>
             </div>
-
-            <ul class="checkList">
-              <li>Consent & opt-out logged</li>
-              <li>Frequency limits enforced</li>
-              <li>Quiet hours respected</li>
-            </ul>
-
-            <div class="divider"></div>
-
-            <h3 class="sectionLabel">Decision trace</h3>
-            <ol class="trace">
-              <li>Checked opt-in and message limits</li>
-              <li>Found Tuesday 2:00 PM slot</li>
-              <li>Booked appointment and logged outcome</li>
-            </ol>
-
             <div class="callout">
-              <strong>Handoff rule:</strong> complaints, pricing disputes, or safety concerns → staff
+              <strong>Action:</strong> Agent drafts a small outreach batch targeted to Tuesday’s open slots.
             </div>
           </article>
-        </div>
+
+          <!-- Step 3 -->
+          <article class="card view" data-view="2">
+            <h2 class="cardTitle">Message & reply handling</h2>
+            <div class="chat">
+              <div class="bubble agent">
+                Hi Sam — AutoLeap on behalf of Apex Auto. We have an opening Tuesday.
+                Reply <strong>1</strong> for 10:30 or <strong>2</strong> for 2:00. STOP to opt out.
+              </div>
+              <div class="bubble customer">
+                2pm works. How long will it take?
+              </div>
+              <div class="bubble agent">
+                Great — I can book <strong>Tuesday 2:00pm</strong>. Most visits take ~60–90 minutes.
+                Reply YES to confirm.
+              </div>
+              <div class="bubble customer">
+                YES
+              </div>
+            </div>
+            <div class="grid2">
+              <div class="info">
+                <div class="infoTitle">Agent decision</div>
+                <div class="infoText">Low‑risk intent (book + duration question) → safe auto‑reply.</div>
+              </div>
+              <div class="info">
+                <div class="infoTitle">Handoff rule</div>
+                <div class="infoText">Complaints, disputes, or safety concerns → staff.</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="card view" data-view="3">
+            <h2 class="cardTitle">Booked + safely logged</h2>
+            <div class="hero success">
+              <div class="heroTitle">Booking confirmed ✅</div>
+              <div class="heroSub">Tuesday • 2:00 PM</div>
+            </div>
+
+            <div class="grid2">
+              <div class="info">
+                <div class="infoTitle">Guardrails applied</div>
+                <ul class="checks">
+                  <li>Consent & opt‑out logged</li>
+                  <li>Frequency limits enforced</li>
+                  <li>Quiet hours respected</li>
+                  <li>Kill switch available</li>
+                </ul>
+              </div>
+              <div class="info">
+                <div class="infoTitle">Decision trace</div>
+                <ol class="trace">
+                  <li>Checked opt‑in + fatigue limits</li>
+                  <li>Matched open slot to service due</li>
+                  <li>Booked appointment + sent confirmation</li>
+                  <li>Logged outcome for measurement</li>
+                </ol>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
     </section>
   </main>
