@@ -148,7 +148,7 @@ const slides = [
   },
   {
     "title": "Success Metrics",
-    "subtitle": "More booked jobs completed successfully",
+    "subtitle": "Win = More booked jobs completed successfully",
     "tag": "Metrics",
     "kicker": "We optimize for incremental booked appointments while keeping opt-outs and complaints low.",
     "sections": [
