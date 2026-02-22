@@ -1,10 +1,9 @@
 // AutoLeap AI CRM Case Study — Slide Web App
-// No external dependencies.
 
 const slides = [
   {
-    "title": "The Autonomous Service Advisor",
-    "subtitle": "From “Marketing Tool” → “Revenue Partner”",
+    "title": "The Autonomous CRM",
+    "subtitle": "From “Marketing Tool” To “Revenue Partner”",
     "tag": "Vision",
     "kicker": "AutoLeap turns repair history into timely, compliant, personalized outreach that converts into booked appointments.",
     "sections": [
@@ -13,19 +12,16 @@ const slides = [
         "cards": [
           {
             "h3": "Today",
-            "p": "Manual, inconsistent follow-up → missed deferred work + empty bays"
+            "p": "• Manual and inconsistent follow-ups\n• Missed deferred work + empty bays"
           },
           {
             "h3": "Tomorrow",
-            "p": "AI-guided follow-up → higher reactivation + more booked jobs, with owner control"
+            "p": "• AI-guided follow-up will lead to higher reactivation and more booked jobs\n• Less owner effort with AI-assisted workflows"
           }
         ]
       }
     ],
     "bullets": [
-      "**More booked appointments** from deferred work + lapsed customers",
-      "**Less owner effort** (minutes, not hours) with AI-assisted workflows",
-      "**Trust-first autonomy** with clear controls and safety rails"
     ],
     "chips": [
     ]
